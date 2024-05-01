@@ -1,0 +1,216 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  flex-shrink: nowrap;
+}
+.left-section-div {
+  align-items: center;
+  display: flex;
+}
+.middle-section-div {
+  flex: 1;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+  max-width: 550px;
+  min-width: 0;
+}
+.right-section-div {
+  width: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 20px;
+}
+.hamburger-menu {
+  height: 24px;
+  margin: 20px;
+  margin-left: 15px;
+  border-radius: 20px;
+  padding: 8px;
+  margin-right: 17px;
+}
+.hamburger-menu:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+.youtube-logo {
+  height: 20px;
+}
+.search-icon {
+  height: 20px;
+  margin-left: 7px;
+  margin-right: 10px;
+}
+.search-button:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+.search-button {
+  border: 1px solid rgb(226, 226, 226);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(245, 245, 245);
+  height: 36px;
+  width: 55px;
+  padding: 6px;
+  margin-left: -1px;
+  margin-right: 15px;
+  position: relative;
+}
+.tool-tip {
+  position: absolute;
+  background-color: rgb(116, 116, 116);
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  z-index: 101;
+  top: 60px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.18s;
+  pointer-events: none;
+}
+.search-button:hover .tool-tip {
+  opacity: 1;
+}
+.voice-search-icon {
+  height: 20px;
+  width: 20px;
+}
+.voice-search-button {
+  background-color: rgb(236, 236, 236);
+  border: 0;
+  height: 36px;
+  width: 36px;
+  border-radius: 20px;
+  padding-top: 4px;
+}
+.voice-search-button:hover .tool-tip {
+  opacity: 1;
+}
+.voice-search-button:hover {
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+}
+.search-bar {
+  flex: 1;
+  height: 32px;
+  max-width: 550px;
+  min-width: 0;
+  padding-left: 12px;
+  font-size: 16px;
+  border: 1px solid rgb(226, 226, 226);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.search-bar::placeholder {
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.upload-icon,
+.notifications-icon {
+  height: 24px;
+  border-radius: 12px;
+}
+.channel-admin-icon {
+  border-radius: 15px;
+  height: 30px;
+}
+.right-section-div button {
+  height: 42px;
+  width: 42px;
+  border: none;
+  border-radius: 21px;
+  background-color: white;
+  padding-inline-start: 5px;
+}
+.right-section-div button:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+.right-section-div button:hover .tool-tip {
+  opacity: 1;
+}
+
+.channel-admin-button {
+  height: 20px;
+  width: 20px;
+}
+.category-header-div {
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  top: 55px;
+  right: 0;
+  left: 84px;
+  background-color: white;
+  height: 50px;
+  margin-left: -10px;
+}
+.category-header-div button {
+  border: none;
+  border-radius: 10px;
+  font-family: "roboto", arial;
+  font-weight: 450;
+  font-size: 14px;
+  height: 33px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgb(243, 243, 243);
+}
+
+.gt {
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.gt-div {
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.gt:hover {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+}
+.category-header-div button:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}
+.category-header-div button:focus {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+.notification-div {
+  z-index: 103;
+  color: white;
+  position: relative;
+}
+.notification-number-div {
+  position: absolute;
+  z-index: 102;
+  background-color: red;
+  top: 0;
+  right: -4px;
+  padding-left: 3px;
+  padding-right: 1px;
+  height: 15px;
+  font-size: 13px;
+  border-radius: 10px;
+}
