@@ -75,6 +75,11 @@
   .main-container-div {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   } 
+  /* .right-section-div{
+    width: 100px;
+    margin-right: -500px;
+  } */
+
 }
 
 
@@ -83,6 +88,7 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 
 
@@ -139,10 +145,10 @@
     border: none;
     margin: 0;
   }
-  .right-section-div{
+  /* .right-section-div{
     justify-content: flex-end;
     width: 100px;
-  }
+  } */
   .notification-div , .notification-button{
     display: none;
   }

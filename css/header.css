@@ -29,8 +29,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  /* padding-right: 200px; */
 }
+
 .hamburger-menu {
   height: 24px;
   width: -24px;
@@ -160,67 +162,61 @@
   width: 20px;
 }
 .category-header-div {
-  width: 100%;
+  width: calc(100%-85px);
   display: flex;
   z-index: 100;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
+  gap: 10px;
   margin-right: 10px;
   background-color: rgb(255, 255, 255);
   height: 50px;
   position: fixed;
-  overflow-x: scroll;
+  overflow-x: auto; /* Changed from scroll to auto for better responsiveness with Bootstrap */
   top: 55px;
-right: 0;
-left: 85px;
-  
-}
-::-webkit-scrollbar {
-  scrollbar-width: none;
-}
-.category-header-div button {
-  border: none;
-  border-radius: 10px;
-  font-family: "roboto", arial;
-  font-weight: 450;
-  font-size: 14px;
-  margin-right: 5px;
-  height: 33px;
-  padding-left: 12px;
-  padding-right: 12px;
-  background-color: rgb(243, 243, 243);
-}
-
-.gt {
-  border: none;
-  border-radius: 15px;
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 10px;
+  right: 0;
+  left: 85px;
+  white-space: nowrap;
   padding-right: 10px;
 }
 
 
+.category-header-div button {
+  border: none;
+  border-radius: 0.5rem; 
+  font-family: "Roboto", sans-serif; 
+  font-weight: 450;
+  font-size: 0.875rem; 
+  margin-right: 0.3125rem; 
+  height: 2.0625rem; 
+  padding: 0 0.75rem; 
+  background-color: rgb(243, 243, 243);
+  transition: background-color 0.3s;
+}
+
 .gt-div {
   background: radial-gradient(#ffffff, #ffffffa1);
-  height: 30px;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
   position: fixed;
   right: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0.9375rem; 
   font-family: 'Courier New', Courier, monospace;
+}
 
+.gt {
+  border: none;
+  height: 2.5rem; 
+  padding: 0.625rem; 
 }
 
 .gt:hover {
-  background-color: rgb(236, 236, 236);
   cursor: pointer;
 }
-.category-header-div button:hover {
-  background-color: rgb(224, 224, 224);
-  cursor: pointer;
+.category-header-div::-webkit-scrollbar {
+  display: none; 
 }
+
 .category-header-div button:focus {
   background-color: rgb(24, 24, 24);
   color: white;
